@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Sebagai Link Akses Remix Icon Sebagai Pendukung Tombol Icon Pendukung -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Penamaan Website -->
+    <title>QUEST.IT INDONESIA</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar Start -->
+      <!-- Di jadikan 3 kolom, posisi navbar dengan lokasi yang berbeda, yaitu :
+      A.) Kelompok Kiri = Logo QUEST.T
+      B.) Kelompok Tengah = Bagian beberapa kolom menu untuk website 
+      C.) Kelompok Kanan = Sebagai Bentuk Icon Menu (Ketika Layar di Kecilkan)
+    -->
+      <nav>
+        <!-- Mengatur Logo QUEST.IT ( Bagian : Kiri )-->
+        <div class="nav_logo"><a href="#">QUEST.IT</a></div>
+
+        <!-- Kumpulan Elemen Navbar ( Bagian : Tengah)-->
+        <!-- Link untuk mengarahkan menu - menu navbar yang terkait -->
+        <ul class="nav_links" id="nav-links">
+          <li class="link"><a href="#home">Home</a></li>
+          <li class="link"><a href="#about">About</a></li>
+          <li class="link"><a href="#stats">Stats</a></li>
+          <li class="link"><a href="#blog">Blog</a></li>
+          <li class="link"><a href="#subscribe">Subscribe</a></li>
+          <!-- Penjelasan Beberapa Menu Navbar yang terkait 
+           A.) Home : Awal Tampilan Website QUEST.IT Sebagai Pembukaan 
+           B.) About : Tampilan Mempersembahkan Tentang Kami 
+           C.) Stats : Mempresentasekan Berapa Teknisi dan Developers dalam metode pengerjaan dan jumlah anggota
+           D.) Blog : Berbagai Aktivitas Teknisi dan Developers Kami Dalam Membantu Konsultasi IT Customers
+           E.) Subscribe : Berlangganan QUEST.IT Sebagai Jasa Konsultasi IT Kamu
+          -->
+        </ul>
+
+        <!-- Ketika Layar di Kecilkan Menjadi Ukuran Dekstop Handphone -->
+        <!-- Tombol Pendukung Menu (Remix Icon) ( Bagian : Kanan ) -->
+        <div class="nav_menu_btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Header Start -->
+      <!-- Sebagai judul, Pembuka dalam website nya -->
+      <div class="section_container header_container" id="home">
+        <h1>
+          Industry with IT Consulting Services Network Technician and Developers
+        </h1>
+        <!-- Tombol "Read More" -->
+        <!-- Dengan design kotak label (Remix.Icon) dan di kasih 2 panah untuk menambahkan rasa styling -->
+        <button class="btn btn_secondary">
+          Read More
+          <span><i class="ri-arrow-right-double-line"></i></span>
+        </button>
+      </div>
+    </header>
+    <!-- Header End -->
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="section_container about_container">
+        <div class="about_grid">
+          <div class="about_content">
+            <!-- Penanda Halaman About Us -->
+            <p class="section_subheader">About Us</p>
+            <!-- Judul yang Akan di Bahas Pada Tampilan About Us  -->
+            <h2 class="section_header">QUEST.IT Company</h2>
+
+            <!-- Penjelasan (1) Terkait Judul yang diajukan untuk dibahsa pada tampilan About Us -->
+            <p class="para">
+              We are your trusted partner in indonesia of industrial IT
+              Consultation Solution. we do our best to solve your IT problems in
+              the network and website world. QUEST.IT was established in 2030,
+              the experience of our technicians and developers, has a lot of
+              experience and long so that they can process your consultation
+              services quickly. QUEST.IT experience with better life.
+            </p>
+            <br />
+            <!-- Penjelasan (2) Terkait Judul yang diajukan untuk dibahsa pada tampilan About Us -->
+            <p class="para">
+              We conduct our business with the highest integrity, ensuring that
+              our clients receive solutions to their IT problems so that they
+              can receive the best quality service from us.
+            </p>
+          </div>
+          <!-- Penjelasan beberapa list kemampuan yang dimilikki oleh QUEST.IT 
+           dalam melayani konsultasi IT untuk melayani konsultasi IT kepada client atau masyarakat.
+           Hal ini mempermudah agar client bisa untuk menambah kepercayaan kepada kami.
+          -->
+          <div class="about_list">
+            <div class="about_item">
+              <!-- Icon dengan Remix.Icon (1) : global -->
+              <span><i class="ri-global-fill"></i></span>
+              <h4>
+                IT consulting services for the world of networks and website
+              </h4>
+            </div>
+            <div class="about_item">
+              <!-- Icon dengan Remix.Icon (2) : bar-graphic -->
+              <span><i class="ri-bar-chart-fill"></i></span>
+              <h4>
+                carry out mapping and approval with the client before carrying
+                out the work
+              </h4>
+            </div>
+            <div class="about_item">
+              <!-- Icon dengan Remix.Icon (3) : Like  -->
+              <span><i class="ri-thumb-up-fill"></i></span>
+              <h4>We do our best for your IT consulting problems</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Stats Section Start -->
+    <section class="stats" id="stats">
+      <div class="section_container stats_container">
+        <div class="stats_content">
+          <!-- Penanda Halaman Stats -->
+          <p class="section_subheader">Stats</p>
+          <!-- Judul yang Akan di Bahas Pada Tampilan Stats  -->
+          <h2 class="section_header">QUEST.IT Team</h2>
+          <!-- Penjelasan (1) Terkait Judul yang diajukan untuk dibahsa pada tampilan Stats -->
+          <p class="para">
+            With a team of dedicated experts and professionals, we bring a
+            wealth of experience and knowledge to every project of your IT
+            consulting. Our deep industry insights and hands-on experience
+            enable us to address even the most complex industry challenges,
+            providing you with tailored solutions that drive results.
+          </p>
+          <div class="stats_grid">
+            <div class="stats_card">
+              <!-- Presentase Karyawan Developers dengan Skills nya  -->
+              <span><i class="ri-building-4-line"></i></span>
+              <h4>100%</h4>
+              <p>Developers</p>
+            </div>
+            <div class="stats_card">
+              <!-- Presentase Karyawan Network Technicians dengan Skills nya  -->
+              <span><i class="ri-user-fill"></i></span>
+              <h4>100%</h4>
+              <p>Network Technicians</p>
+            </div>
+            <div class="stats_card">
+              <!-- Presentase Berapa Client yang Berterimakasih kepada kami  -->
+              <span><i class="ri-user-smile-line"></i></span>
+              <h4>3000%</h4>
+              <p>Clients Thanks to Us</p>
+            </div>
+            <div class="stats_card">
+              <!-- Presentase berapa project yang telah selesai dikerjakan -->
+              <span><i class="ri-trophy-fill"></i></span>
+              <h4>5500%</h4>
+              <p>Completed Projects</p>
+            </div>
+          </div>
+        </div>
+        <div class="stats_image">
+          <!-- Gambar Teknisi dan Developer -->
+          <img src="assets/stats-1.png" alt="stats" />
+          <img src="assets/stats-2.png" alt="stats" />
+        </div>
+      </div>
+    </section>
+    <!-- Stats Section End -->
+
+    <!-- Banner Section Start -->
+    <section class="banner">
+      <div class="section_container banner_container">
+        <div class="banner_content">
+          <!-- Penanda Halaman Banner -->
+          <p class="section_subheader">More Info</p>
+          <!-- Judul yang Akan di Bahas Pada Tampilan Banner  -->
+          <h2 class="section_header">
+            We Believe In Building Your IT Consulting Business Relationship in
+            the Long Term
+          </h2>
+          <!-- Penjelasan (1) Terkait Judul yang diajukan untuk dibahsa pada tampilan Banner -->
+          <p class="para">
+            When you give us IT consultation, we will serve you very well.
+            Including in the long term, at some point you build a network in
+            your building area using our partners for a long period of time. We
+            are ready to help and provide every effective communication to our
+            customers.
+          </p>
+          <!-- Banner btns -->
+          <div class="banner_btns">
+            <button class="btn btn_secondary">
+              <!-- Button "Read More" dengan Styling Remix.Icon -->
+              Read More
+              <span><i class="ri-arrow-right-double-line"></i></span>
+            </button>
+            <button class="btn btn_primary">
+              <!-- Button "Get a Quote" dengan Styling Remix.Icon -->
+              Get a Quote
+              <span><i class="ri-arrow-right-double-line"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner Section End -->
+
+    <!-- Blog Section Start -->
+    <section class="blog" id="blog">
+      <div class="section_container blog_container">
+        <!-- Penanda Halaman Blog -->
+        <p class="section_subheader">Our Posts</p>
+        <!-- Judul yang Akan di Bahas Pada Tampilan Blog  -->
+        <h2 class="section_header">Blog Posts</h2>
+        <div class="blog_grid">
+          <!-- Tampilan Blog Pertama  -->
+          <div class="blog_card">
+            <img src="assets/blog-1.jpg" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i>by David</span>
+              <span><i class="ri-time-line"></i> Jun 28, 2031</span>
+              <span><i class="ri-thumb-up-line"></i>100</span>
+            </div>
+            <h4>Website Creation Process</h4>
+            <p>
+              The process of creating websites and applications is not easy, but
+              QUEST.IT developers provide the best service for their clients to
+              solve their IT problems.
+            </p>
+          </div>
+          <!-- Tampilan Blog Kedua -->
+          <div class="blog_card">
+            <img src="assets/blog-2.jpg" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i>by Sarah</span>
+              <span><i class="ri-time-line"></i> Nov 22, 2031</span>
+              <span><i class="ri-thumb-up-line"></i>105</span>
+            </div>
+            <h4>IT Consulting Meeting</h4>
+            <p>
+              As we know that QUEST.IT provides any IT consulting services, they
+              will solve your IT problems with pleasure and very professionally,
+              you can also consult through the application online or make an
+              appointment with the developer or technician who is in accordance
+              with your wishes to solve IT problems.
+            </p>
+          </div>
+          <!-- Tampilan Blog Ketiga -->
+          <div class="blog_card">
+            <img src="assets/blog-3.jpg" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i>by Michael</span>
+              <span><i class="ri-time-line"></i> Mar 15, 2034</span>
+              <span><i class="ri-thumb-up-line"></i>142</span>
+            </div>
+            <h4>Creating Multiple Websites</h4>
+            <p>
+              QUEST.IT Provides several developers to create several website
+              displays according to the wishes of the clients, they create
+              websites with full beauty and elegance in every work. Very
+              satisfying!
+            </p>
+          </div>
+
+          <!-- Tampilan Blog Keempat -->
+          <div class="blog_card">
+            <img src="assets/blog-4.jpg" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i>by Farhan</span>
+              <span><i class="ri-time-line"></i> Apr 17, 2034</span>
+              <span><i class="ri-thumb-up-line"></i>4500</span>
+            </div>
+            <h4>Reliable Technical Installation of CCTV Devices</h4>
+            <p>
+              The installation of CCTV which is currently being developed
+              because it has a big impact on the community in maintaining
+              security and comfort in their daily lives. QUEST.IT is ready to
+              provide services to you in any IT consultation problem that the
+              most important thing is the security of the clients
+            </p>
+          </div>
+
+          <!-- Tampilan Blog Kelima -->
+          <div class="blog_card">
+            <img src="assets/blog-5.jpg" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i>by Salwa</span>
+              <span><i class="ri-time-line"></i> May 10, 2035</span>
+              <span><i class="ri-thumb-up-line"></i>3000</span>
+            </div>
+            <h4>
+              Providing Some Educational and News on IT Developments in
+              Indonesia
+            </h4>
+            <p>
+              QUEST.IT provides services about news and education in its
+              application, regarding the extent of the reach of technology that
+              Indonesia currently has from the past and will of course have in
+              the future.
+            </p>
+          </div>
+          <!-- Tampilan Blog Keenam -->
+          <div class="blog_card">
+            <img src="assets/blog-6.jpg" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i>by Zaskia</span>
+              <span><i class="ri-time-line"></i> Agust 17, 2035</span>
+              <span><i class="ri-thumb-up-line"></i>1500</span>
+            </div>
+            <h4>Robot Making for Sales in Mini Market</h4>
+            <p>
+              QUEST.IT makes several robots for service in minimarkets, this
+              provides convenience for minimarket workers so they don't work too
+              hard. So that the robot is currently being used to provide comfort
+              and security for workers and visitors.
+            </p>
+          </div>
+          <!-- Tampilan Blog Ketujuh -->
+          <div class="blog_card">
+            <img src="assets/blog-7.jpg" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i>by William</span>
+              <span><i class="ri-time-line"></i> Sept 30, 2035</span>
+              <span><i class="ri-thumb-up-line"></i>255</span>
+            </div>
+            <h4>Automatic Parking Barrier Making In Office Area</h4>
+            <p>
+              QUEST.IT Creates and provides parking barriers in office areas to
+              maintain the stability of security and comfort for people entering
+              and leaving the company in guarding their vehicles.
+            </p>
+          </div>
+          <!-- Tampilan Blog Kedelapan -->
+          <div class="blog_card">
+            <img src="assets/blog-8.jpg" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i>by Billy</span>
+              <span><i class="ri-time-line"></i> Jan 5, 2036</span>
+              <span><i class="ri-thumb-up-line"></i>1000</span>
+            </div>
+            <h4>
+              Network Technician Training Test Before Working in Community Areas
+            </h4>
+            <p>
+              In the world of telecommunication technology development today,
+              people really need to communicate over long distances without
+              meeting. Therefore, QUEST.IT trains and tests every technician so
+              that this has a good impact, namely maintaining comfort and
+              convenience for the community.
+            </p>
+          </div>
+          <!-- Tampilan Blog Kesembilan -->
+          <div class="blog_card">
+            <img src="assets/blog-9.jpg" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i>by Diandra</span>
+              <span><i class="ri-time-line"></i> Nov 11, 2036</span>
+              <span><i class="ri-thumb-up-line"></i>1100</span>
+            </div>
+            <h4>
+              Test Training of IOT Technicians Before Working in Community Areas
+              in Robotics Manufacturing
+            </h4>
+            <p>
+              In today's world of technological development, we create robots as
+              a means to facilitate human activities. In relation to this, IOT
+              technicians must really be tested first before helping and
+              handling in community areas so as not to harm and make the
+              Indonesian nation more developed of course.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Subscribe Section Start -->
+    <section class="subscribe" id="subscribe">
+      <div class="section_container subscribe_container">
+        <!-- Penanda Halaman Subscribe -->
+        <p class="section_subheader">Newsletter</p>
+        <!-- Judul yang Akan di Bahas Pada Tampilan Subscribe -->
+        <h2 class="section_header">
+          Subscribe To Get The Latest News & Updates In QUEST.IT
+        </h2>
+        <form action="/">
+          <!-- Memasukan Input Untuk Label Button "Name", "Email" -->
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Email" />
+          <!-- Tekan Button Subscribe untuk mengumpulkan data -->
+          <button class="btn btn_primary">Subscribe</button>
+        </form>
+        <!-- Meyakinkan client untuk pengumpulan data clients-->
+        <p class="para">
+          by sumbitting this form, you agree to the
+          <a href="#">privacy policy</a> and <a href="#">terms of use. </a>
+        </p>
+      </div>
+    </section>
+    <!-- Subscribe Section End -->
+
+    <!-- Testimonies Section Start -->
+    <section class="customer">
+      <div class="section_container customer_container">
+        <!-- Penanda Halaman Testimonials -->
+        <p class="section_subheader">Testimonials</p>
+        <!-- Judul yang Akan di Bahas Pada Tampilan Testimonials  -->
+        <h2 class="section_header">What Our Customers Say</h2>
+        <!-- Penjelasan (1) Terkait Judul yang diajukan untuk dibahsa pada tampilan Testimonies -->
+        <p class="para">
+          The IT logistics solution provided by QUEST.IT has certainly made us
+          feel more comfortable and satisfied in solving our IT problems. In any
+          form whatsoever, they are very reliable and caring and provide the
+          best direction for us, the community.
+        </p>
+        <div class="customer_review">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides Of Customers-->
+              <div class="swiper-slide">
+                <div class="customer_review_card">
+                  <span><i class="ri-double-quotes-r"></i></span>
+                  <!-- Customer 1 -->
+                  <p>
+                    Working with QUEST.IT in IT consulting for website creation
+                    for my company was handled very well, and provided an
+                    extraordinary solution and innovative idea according to my
+                    wishes! So I don't just rely on social media as my marketing
+                    strategy.
+                  </p>
+                  <div class="customer_review_details">
+                    <img src="assets/customer-1.jpg" alt="customer" />
+                    <div>
+                      <h4>John Smith</h4>
+                      <h5>Industrialist</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer_review_card">
+                  <span><i class="ri-double-quotes-r"></i></span>
+                  <!-- Customer 2 -->
+                  <p>
+                    Working with QUEST.IT in IT consultation for installation of
+                    20 analog CCTV devices with different locations in my
+                    company. This was very quickly responded to and immediately
+                    came and worked on the same day. Very satisfying!
+                  </p>
+                  <div class="customer_review_details">
+                    <img src="assets/customer-2.jpg" alt="customer" />
+                    <div>
+                      <h4>Sarah Jessica</h4>
+                      <h5>CEO & Founder</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer_review_card">
+                  <span><i class="ri-double-quotes-r"></i></span>
+                  <!-- Customer 3 -->
+                  <p>
+                    Working with QUEST.IT in IT consultation to build an
+                    internet network in the hospital area from the 1st floor to
+                    the 10th floor, because the hospital is still new, I want my
+                    clients and employees to have fast wifi internet service
+                    here. But the technicians from QUEST.IT are very
+                    professional and reliable in this work, 3 days straight away
+                    without waiting a long time!
+                  </p>
+                  <div class="customer_review_details">
+                    <img src="assets/customer-3.jpg" alt="customer" />
+                    <div>
+                      <h4>George Jason</h4>
+                      <h5>CEO Hospital</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer_review_card">
+                  <span><i class="ri-double-quotes-r"></i></span>
+                  <!-- Customer 4 -->
+                  <p>
+                    Collaborating with QUEST.IT in IT consultation to build an
+                    internet network in a large event area, namely online games
+                    in 5 days with a very large room area. However, the QUEST.IT
+                    team is very professional, they are very responsive and on
+                    the same day when I ordered it, they immediately worked on
+                    it and came to the location to conduct a survey first and
+                    they immediately determined the direction strategy for
+                    installing several network devices! and they were ready and
+                    finished on D-2 of the event. Very Amazing!.
+                  </p>
+                  <div class="customer_review_details">
+                    <img src="assets/Client-1.jpg" alt="customer" />
+                    <div>
+                      <h4>Jonathan Richard</h4>
+                      <h5>Producer</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer_review_card">
+                  <span><i class="ri-double-quotes-r"></i></span>
+                  <!-- Customer 5 -->
+                  <p>
+                    Working with QUEST.IT in IT consulting to create websites
+                    for my 3 companies in a fast time, just 2 days and it was
+                    done. They made the website according to my wishes, it was
+                    very enjoyable. The impact is that my customers like to
+                    survey my company online again without coming, this makes
+                    customers feel confident to buy my products in my company!
+                  </p>
+                  <div class="customer_review_details">
+                    <img src="assets/Client-2.jpg" alt="customer" />
+                    <div>
+                      <h4>Brian Maqquela</h4>
+                      <h5>Businessman</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer_review_card">
+                  <span><i class="ri-double-quotes-r"></i></span>
+                  <!-- Customer 6 -->
+                  <p>
+                    Working with QUEST.IT in IT consulting for making mini
+                    market cashier robotics, which is very suitable for my
+                    design. This makes me feel very happy because the innovation
+                    and creativity owned by QUEST.IT is quite large!
+                  </p>
+                  <div class="customer_review_details">
+                    <img src="assets/Client-3.jpg" alt="customer" />
+                    <div>
+                      <h4>Anders Antonsen</h4>
+                      <h5>Architect</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonies Section End -->
+
+            <!-- Swipper pagination untuk testimoni clients-->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Customers Says End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="section_container footer_container">
+        <div class="footer_col">
+          <h5><a href="#">QUEST.IT</a></h5>
+          <p>
+            We strive to be at the forefront of technological advancements and
+            industry best practices, and consistently exceed our clients'
+            expectations in their IT consulting.
+          </p>
+          <div class="footer_socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer_col">
+          <h4>Quick Links</h4>
+          <div class="footer_links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Blog</a>
+            <a href="#">Career</a>
+          </div>
+        </div>
+        <div class="footer_col">
+          <h4>Our Services</h4>
+          <div class="footer_links">
+            <a href="#">Network Technician</a>
+            <a href="#">Developers</a>
+            <a href="#">Update on developments Indoesian IT news</a>
+            <a href="#">IT consultation in 24 hours</a>
+          </div>
+        </div>
+        <div class="footer_col">
+          <h4>Help</h4>
+          <div class="footer_links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Support</a>
+            <a href="#">Terms & Condition</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bar">
+        Copyright © 2024 Fania.Arika . All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- My Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
